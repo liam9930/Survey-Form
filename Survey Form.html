@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Survey Form</title>
+<link rel="stylesheet" href=styles.css>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+</head>
+<body>
+    <header>
+<h1 id="title">威仔吉他學習調查</h1>
+<p id="description">感謝你撥空，有你的回覆我們將會更好</p>
+</header>
+<form id="survey-form">
+    <div>
+    <label for="name" id="name-label">姓名(Name)</label>
+    <input id="name" type="text" placeholder="(輸入您的名字)Enter your name" required>
+    </div>
+    <div>
+    <label for="email" id="email-label">Email</label>
+    <input id="email" type="email"placeholder="Enter your email" required> <br>
+    </div>
+    <div>
+    <label for="number" id="number-label">年齡(age)</label>
+    <input id="number" type="number"placeholder="Age" max="100" min="1"> <br>
+    </div>
+    <div>
+    <label>Which option best describes your current role?</label>
+    <select id="dropdown">
+        <option selected disabled>Select current rule</option>
+        <option value="student">Student</option>
+        <option value="fullTimeJob">Full time job</option>
+    </select>
+    </div>
+    <div>
+    <label>Would you recommend freeCodeCamp to a friend?</label>
+    <input type="radio" value="definitely" name="recommend" class="inline">Definitely<br>
+    <input type="radio" value="maybe" name="recommend"
+    class="inline">Maybe<br>
+    <input type="radio" value="not-sure" name="recommend"
+    class="inline">Not sure<br>
+    </div>
+    <div>
+        <label>What would you like to see improved? (Check all that apply)
+        </label>
+        <input type="checkbox" value="Front-end Projects" class="inline">Front-end Projects<br>
+        <input type="checkbox" value="Back-end Projects" class="inline">Back-end Projects<br>
+        <input type="checkbox" value="Data Visualization" class="inline">Data Visualization<br>
+        <input type="checkbox" value="Challenges" class="inline">Challenges<br>
+        <input type="checkbox" value="Open Source Community" class="inline">Open Source Community<br>
+        <input type="checkbox" value="Gitter help rooms" class="inline">Gitter help rooms<br>
+    </div>
+    <div>
+       <label> Any comments or suggestions?</label>
+    <textarea>Enter your comment here....
+    </textarea>
+    </div>
+    <input type="submit" id="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
